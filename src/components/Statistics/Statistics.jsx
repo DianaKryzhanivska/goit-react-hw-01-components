@@ -17,7 +17,7 @@ function getRandomHexColor() {
 export const Statistics = ({ title, stats = [] }) => {
   return (
     <StyledStatisticsSection>
-      <StyledStatisticsTitle>{title}</StyledStatisticsTitle>
+      {title && <StyledStatisticsTitle>{title}</StyledStatisticsTitle>}
 
       <StyledStatisticsList>
         {stats.map(item => (
